@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+<body>
+  <header class="header">
+    <h1 class="title">{{site.title}}</h1>
+  </header>
+  <main class="main">
+      {{ content }}
+  </main>
+  <footer class="footer">
+    <p>{{site.title}} &copy; {{ site.time | date: '%Y' }}</p>
+  </footer>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="/assets/js/vegas.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
 </html>

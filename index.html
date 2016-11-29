@@ -1,23 +1,49 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<section class="contenedor___redes">
+  <ul class="lista-redes-sociales">
+  	<li class="lista-item">
+  		<a class="lista-link" href="https://01luisrene.com" target="_blank">
+	  		<i class="fa fa-globe" aria-hidden="true"></i>
+	  		<span class="hidden">Sitio Web 01luisrene.com</span>
+  		</a>
+  	</li>
+  	<li class="lista-item">
+  		<a class="lista-link" href="https://www.facebook.com/cerounoluisrene/" target="_blank">
+	  		<i class="fa fa-facebook" aria-hidden="true"></i>
+	  		<span class="hidden">Facebook</span>
+  		</a>
+  	</li>
+  	<li class="lista-item">
+  		<a class="lista-link" href="https://twitter.com/01luisrene" target="_blank">
+	  		<i class="fa fa-twitter" aria-hidden="true"></i>
+	  		<span class="hidden">Twitter</span>
+  		</a>
+  	</li>
+  	<li class="lista-item">
+  		<a class="lista-link" href="https://plus.google.com/+01LuisRene" target="_blank">
+  			<i class="fa fa-google-plus" aria-hidden="true"></i>
+  			<span class="hidden">Google Plus</span>
+  		</a>
+  	</li>
+  	<li class="lista-item">
+  		<a class="lista-link" href="https://github.com/01luisrene" target="_blank">
+  			<i class="fa fa-github-alt" aria-hidden="true"></i>
+  			<span class="hidden">GitHub</span>
+  		</a>
+  	</li>
+  	<li class="lista-item">
+  		<a class="lista-link" href="https://www.youtube.com/c/01luisrene" target="_blank">
+  			<i class="fa fa-youtube" aria-hidden="true"></i>
+  			<span class="hidden">YouTube</span>
+  		</a>
+  	</li>
+  	<li class="lista-item">
+  		<a class="lista-link" href="mailto:01luisrene@gmail.com" target="_blank">
+  			<i class="fa fa-envelope" aria-hidden="true"></i>
+  			<span class="hidden">Mensaje</span>
+  		</a>
+  	</li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</section>
